@@ -32,7 +32,7 @@ jobs:
           restore-keys: ${{ runner.os }}-sonar
 
       - name: BuildwithMaven
-        run: mvn-B verify
+        run: mvn -B verify
       
       - name: SonarCloud Scan
         env:
